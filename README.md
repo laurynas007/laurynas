@@ -1,5 +1,9 @@
 # laurynas
 V0.1
+
+
+zip failas 0_1 tai yra suzipuotas visual studio projektinis failas, o Program.cs tai pats C# kodinis failas jeigu su projektinio folderiu iškiltų bėdų kas nors nepasileis.
+---------------------------------
 Programą atlikau menu būdu. Viena menu funkcija yra skirta naujos mokinio klasės sukūrimui ir jos duomenų užpildymui, 
 o kita menu funkcija tai ir yra mokinio klasių duomenų atspausdinimai.
 
