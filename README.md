@@ -63,13 +63,20 @@ be to, pataisiau galimus bugus kitose versijose.
 Naudojimosi instrukcija.
 
 Mano programa yra padaryta meniu pagalba.
+
 1 meniu funkcija leidžia rankiniu budu sukurti student strukturos elementa ir ji uzpildyt ir sukurta studenta ikelti i sarasa.
 Kuriant studenta yra prasoma ivesti varda ir pavarde.
 Del pažymiu išvedama apklausa, ar noriu įvesti pažymius pats ar noriu, kad man juos sugeneruotu kompiuteris.
 Toliau bet kokiu atveju klausiama ar is anksto žinomas namų darbų skaicius, jeigu taip, tai prasoma ivesti skaiciu (jeigu 0, prasoma pakartoti), jeigu ne, tai kas karta klausiama ar norima ivesti nauja namu darbu pažymį.
 Jeigu buvo pasirinktas atsitiktiniu pažymiu rėžimas, tai pačius pažymius sugeneruoja kompiuteris, jeigu ne, reikia ivesti patiems.
-2 meniu funkcija nuskaito studentai.txt faila, ir is karto atspausdina apdorota studentai sarasa.
+
+2 meniu funkcija nuskaito studentai.txt faila, ir is karto atspausdina apdorota studentai sarasa, tam reikia pačiam sukurti studentai.txt failą ir jį patalpinti reikiamoje direktorijoje (direktoriją matome paleidus programą).
+
 3 meniu funkcija tiesiog leidžia atspausdinti i konsole studentu sarasa.
+
 4 meniu funkcija sugeneruoja 5 studentu failus su skirtingais irasu kiekiais: 1000,10000,100000,1000000,10000000 ir juos atspausdina i vargsiukai.txt ir galvociai.txt. Ši meniu funkcija turi kodo laiko matuokli.
+
 5 meniu funkcija naudoja jau sugeneruotus 5 failus 4 meniu funkcijos pagalba, kurios dėka yra išbandomas 3 strategiju greitis.
 Norint atlikti 5 meniu funkciją yra siūloma paleisti programą iš naujo.
+
+Paleidžiant programą yra matoma failų direktorija.
