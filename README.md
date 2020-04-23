@@ -34,6 +34,9 @@ sukuriamas naujas mokinys structuros atributas kategorija, kuri yra uzpildoma au
 2 failai pavadinti pagal tas kategorijas ir i jas yra spausdinami irasai.
 galutinai failai susikuria kai uzdarai programa.
 
+
+4 menu sakos greitis 50.23s
+
 v0.5
 
 sukuriau failo nuskaitymo funkcija, i kuria kreipiuosi failo pavadinimu, paciuss 5 failus as susigeneravau anksciau 4 uzd pagalba.
@@ -42,6 +45,12 @@ gaila, bet duomenu failu neiseis i githuba ikelti nes jie kartu virsija 25mb rib
 
 as skaitant failus ir uzpildant struktura jau is anksto nustatau kategorija, o atliekant tam tikra testa, pakeiciu duomenu strukturos tipa, tarp list, linklist ir queue.
 
+List greitis 30790ms
+
+Linkedlist greitis 32188ms
+
+Queue greitis 34187 ms
+
 
 v1.0
 
@@ -49,12 +58,19 @@ Patobulinau v0.5 versija, taip pat sukuriau meniu kurios pagalba iskvieciu norim
 Kiekviena strategija automatiskai atlieka apskaiciavimus su list, linkedlist ir queue.
 1.strategija tai rusiavimas i 2 konteinerius.
 
+
 2 strategija tai perkeli vienos kategorijos duomenis (vargsiukai) i atskira konteineri, o is pirminio jie istrinami, kas lieka, tas perkeliama i galvociu konteineri.
 
 3 strategija tai manoji. Mano student structura turi kategorijos atributa, kuris yra uzpildomas ivedant duomenis. To atributo pagalba as galiu nuspresti i kuri konteineri as noriu spausdinti duomenis, tokiu budu, man nereikia kurti papildomu konteineriu ir i juos dar ka nors rusiuoti. 
 
 
-Siulau atliekant v0.5 uzduoti paleisti programa isnaujo, nes kitaip pastebejau labai ilgai failus nuskaitoma.
+
+2 strategija tai perkeli vienos kategorijos duomenis (vargsiukai) i atskira konteineri, o is pirminio jie istrinami, kas lieka, tas perkeliama i galvociu konteineri.
+
+
+3 strategija tai manoji. Mano student structura turi kategorijos atributa, kuris yra uzpildomas ivedant duomenis. To atributo pagalba as galiu nuspresti i kuri konteineri as noriu spausdinti duomenis, tokiu budu, man nereikia kurti papildomu konteineriu ir i juos dar ka nors rusiuoti. 
+
+
 
 be to, pataisiau galimus bugus kitose versijose.
 
