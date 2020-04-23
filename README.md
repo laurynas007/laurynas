@@ -26,6 +26,7 @@ tuo paciu metu kai pildomi failai, taip pat ir yra pildomas mokiniu listas
 sukuriamas naujas mokinys structuros atributas kategorija, kuri yra uzpildoma automatiskai pagal gaultini bala.
 2 failai pavadinti pagal tas kategorijas ir i jas yra spausdinami irasai.
 galutinai failai susikuria kai uzdarai programa.
+
 4 menu sakos greitis 50.23s
 
 v0.5
@@ -34,8 +35,11 @@ Tuos failus reikia patalpinti i bin>Debug>netcoreapp2.1
 gaila, bet duomenu failu neiseis i githuba ikelti nes jie kartu virsija 25mb riba.
 
 as skaitant failus ir uzpildant struktura jau is anksto nustatau kategorija, o atliekant tam tikra testa, pakeiciu duomenu strukturos tipa, tarp list, linklist ir queue.
+
 List greitis 30790ms
+
 Linkedlist greitis 32188ms
+
 Queue greitis 34187 ms
 
 v1.0
@@ -43,16 +47,27 @@ v1.0
 Patobulinau v0.5 versija, taip pat sukuriau meniu kurios pagalba iskvieciu norima strategija.
 Kiekviena strategija automatiskai atlieka apskaiciavimus su list, linkedlist ir queue.
 1.strategija tai rusiavimas i 2 konteinerius.
+
 list greitis: 19719ms
+
 linkedlist greitis:11630
+
 Queue greitis: 20754
+
 2 strategija tai perkeli vienos kategorijos duomenis (vargsiukai) i atskira konteineri, o is pirminio jie istrinami, kas lieka, tas perkeliama i galvociu konteineri.
+
 listo greitis: 10064
+
 linkedlist greitis: 19621
+
 Queue greitis: 11129
+
 3 strategija tai manoji. Mano student structura turi kategorijos atributa, kuris yra uzpildomas ivedant duomenis. To atributo pagalba as galiu nuspresti i kuri konteineri as noriu spausdinti duomenis, tokiu budu, man nereikia kurti papildomu konteineriu ir i juos dar ka nors rusiuoti. 
+
 listo greitis: 9047 ms
+
 linkedlist greitis: 8926 ms
+
 Queue greitis: 12507 ms
 
 Siulau atliekant v0.5 uzduoti paleisti programa isnaujo, nes kitaip pastebejau labai ilgai failus nuskaitoma.
