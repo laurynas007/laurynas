@@ -17,21 +17,65 @@ Visi šie duomenys yra saugomi klasėje ir kiekviena klasė turi dviejus spausdi
 vienas, kai norimas galutinis balas būtų skaičiuojamas pagal namų darbų vidurkį, o kitas, pagal medianą.
 
 Spausdinimo meniu duoda užklausą, kuri klausia ar vartotojas nori atspausdinti visus mokinius ir jų galutinius balus pagal vidurkį, arba pagal medianą.
+
 V0.2&V0.3
 
 Pakeičiau mokinio klasę į mokinio struktūrą. sukūriau naują meniu funkciją, kuri leidžia vartotojui nuskaityti duomenis iš failo ir iš karto juos atspausdinti, rūšiavau pagal pavardes nes tai pirmasis spausdinamas stulpelis. Try catch metodą naudoju prieš meniu kuris paskelbia ar failas rastas ar ne, o pats txt failas randasi bin>Debug>netcoreapp2.1
+
 v0.4
-ciklu pagalba generuojami failai..
+sukurta failo generavimo funkcija, kuriai reikia ivesti failo pavadinima ir irasu skaiciu.
+funkcijoje yra laiko matuoklis.
+Kai irasai yra generuojami, tai jie tuo paciu metu yra irasomi i faila ir i lista.
+irasas yra surusiuojamas pagal didejimo tvarka, o tada spausdinama i 2 atskirus failus pagal vargsiuku ir galvociu kategorijas.
+
+4 menu funkcijoje yra 5 failo generavimo funkcijos iskvietimai pagal 
 tuo paciu metu kai pildomi failai, taip pat ir yra pildomas mokiniu listas
 sukuriamas naujas mokinys structuros atributas kategorija, kuri yra uzpildoma automatiskai pagal gaultini bala.
 2 failai pavadinti pagal tas kategorijas ir i jas yra spausdinami irasai.
 galutinai failai susikuria kai uzdarai programa.
+
 v0.5
+
 sukuriau failo nuskaitymo funkcija, i kuria kreipiuosi failo pavadinimu, paciuss 5 failus as susigeneravau anksciau 4 uzd pagalba.
 Tuos failus reikia patalpinti i bin>Debug>netcoreapp2.1
 gaila, bet duomenu failu neiseis i githuba ikelti nes jie kartu virsija 25mb riba.
 
 as skaitant failus ir uzpildant struktura jau is anksto nustatau kategorija, o atliekant tam tikra testa, pakeiciu duomenu strukturos tipa, tarp list, linklist ir queue.
+
+
+v1.0
+
+Patobulinau v0.5 versija, taip pat sukuriau meniu kurios pagalba iskvieciu norima strategija.
+Kiekviena strategija automatiskai atlieka apskaiciavimus su list, linkedlist ir queue.
+1.strategija tai rusiavimas i 2 konteinerius.
+
+2 strategija tai perkeli vienos kategorijos duomenis (vargsiukai) i atskira konteineri, o is pirminio jie istrinami, kas lieka, tas perkeliama i galvociu konteineri.
+
+3 strategija tai manoji. Mano student structura turi kategorijos atributa, kuris yra uzpildomas ivedant duomenis. To atributo pagalba as galiu nuspresti i kuri konteineri as noriu spausdinti duomenis, tokiu budu, man nereikia kurti papildomu konteineriu ir i juos dar ka nors rusiuoti. 
+
+
+Siulau atliekant v0.5 uzduoti paleisti programa isnaujo, nes kitaip pastebejau labai ilgai failus nuskaitoma.
+
+be to, pataisiau galimus bugus kitose versijose.
+
+v1.0.1
+
+Pataisiau klaidas.
+
+4 menu funkcijoje as 
+sukuriau failo generavimo funkcija, kuriai reikia ivesti failo pavadinima ir irasu skaiciu.
+
+funkcijoje yra laiko matuoklis.
+Kai irasai yra generuojami, tai jie tuo paciu metu yra irasomi i faila ir i lista.
+irasas yra surusiuojamas pagal didejimo tvarka, o tada spausdinama i 2 atskirus failus pagal vargsiuku ir galvociu kategorijas.
+
+4 menu funkcijoje yra 5 failo generavimo funkcijos iskvietimai pagal failo pavadinima ir irasu skaiciu. 1.txt 1000 2.txt 10000 3.txt 100000 4.txt 1000000 5.txt 10000000
+
+5 menu funkcija taip pat pakeista.
+Čia irgi yra sukurta nauja funkcija i kuria kreipiamasi su failo pavadinimu ir norimos strategijos numeriu.
+ Strategijos yra aprasytos v1.0 skiltyje.
+
+Pačioje menu funkcijoje yra 15 kreipiniu į šią funkciją, kad išmatuotų kiekvieno failo (1.txt;2.txt;3.txt;4.txt;5.txt) konteineriu apdorojimo greicius pagal 3 strategijas.
 
 Tyrimų rezultatai:
 l - list
@@ -52,20 +96,7 @@ laikas matuojamas milisekundemis (ms)
 | v0.5 3 strat ll  | 13     | 9     | 76    | 856   | 10645 |
 | v0.5 3 strat q   | 4      | 11    | 76    | 825   | 12592 |
 
-v1.0
 
-Patobulinau v0.5 versija, taip pat sukuriau meniu kurios pagalba iskvieciu norima strategija.
-Kiekviena strategija automatiskai atlieka apskaiciavimus su list, linkedlist ir queue.
-1.strategija tai rusiavimas i 2 konteinerius.
-
-2 strategija tai perkeli vienos kategorijos duomenis (vargsiukai) i atskira konteineri, o is pirminio jie istrinami, kas lieka, tas perkeliama i galvociu konteineri.
-
-3 strategija tai manoji. Mano student structura turi kategorijos atributa, kuris yra uzpildomas ivedant duomenis. To atributo pagalba as galiu nuspresti i kuri konteineri as noriu spausdinti duomenis, tokiu budu, man nereikia kurti papildomu konteineriu ir i juos dar ka nors rusiuoti. 
-
-
-Siulau atliekant v0.5 uzduoti paleisti programa isnaujo, nes kitaip pastebejau labai ilgai failus nuskaitoma.
-
-be to, pataisiau galimus bugus kitose versijose.
 
 ----
 Naudojimosi instrukcija.
