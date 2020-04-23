@@ -116,5 +116,6 @@ Jeigu buvo pasirinktas atsitiktiniu pažymiu rėžimas, tai pačius pažymius su
 4 meniu funkcija sugeneruoja 5 studentu failus su skirtingais irasu kiekiais: 1000,10000,100000,1000000,10000000 ir juos atspausdina i vargsiukai.txt ir galvociai.txt. Ši meniu funkcija turi kodo laiko matuokli kuris rodys kiek laiko truko kurį failą apdoroti.
 
 5 meniu funkcija padaro 15 kreipinių į funkciją naudojant failo pavadinima ir strategijos numerį. Konsolės lange matome laikus.
+Šiom funkcijom atlikti turi būti jau sukurti failai, tai padaroma 4 menu funkcijos pagalba.
 
 Paleidžiant programą yra matoma failų direktorija.
