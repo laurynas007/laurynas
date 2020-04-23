@@ -17,9 +17,11 @@ Visi šie duomenys yra saugomi klasėje ir kiekviena klasė turi dviejus spausdi
 vienas, kai norimas galutinis balas būtų skaičiuojamas pagal namų darbų vidurkį, o kitas, pagal medianą.
 
 Spausdinimo meniu duoda užklausą, kuri klausia ar vartotojas nori atspausdinti visus mokinius ir jų galutinius balus pagal vidurkį, arba pagal medianą.
+
 V0.2&V0.3
 
 Pakeičiau mokinio klasę į mokinio struktūrą. sukūriau naują meniu funkciją, kuri leidžia vartotojui nuskaityti duomenis iš failo ir iš karto juos atspausdinti, rūšiavau pagal pavardes nes tai pirmasis spausdinamas stulpelis. Try catch metodą naudoju prieš meniu kuris paskelbia ar failas rastas ar ne, o pats txt failas randasi bin>Debug>netcoreapp2.1
+
 v0.4
 ciklu pagalba generuojami failai..
 tuo paciu metu kai pildomi failai, taip pat ir yra pildomas mokiniu listas
