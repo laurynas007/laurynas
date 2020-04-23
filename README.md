@@ -32,11 +32,13 @@ Tuos failus reikia patalpinti i bin>Debug>netcoreapp2.1
 gaila, bet duomenu failu neiseis i githuba ikelti nes jie kartu virsija 25mb riba.
 
 as skaitant failus ir uzpildant struktura jau is anksto nustatau kategorija, o atliekant tam tikra testa, pakeiciu duomenu strukturos tipa, tarp list, linklist ir queue.
+
 Tyrimų rezultatai:
 l - list
 ll - linkedlist
 q - queue
 laikas matuojamas milisekundemis (ms)
+
 | Uzduotis\failas  | 1.txt  | 2.txt | 3.txt | 4.txt | 5.txt |
 | -------------    | ------ | ------| ------|-------|-------|
 | v0.4             | 17     | 35    | 324   | 3364  | 36275 |
@@ -49,6 +51,7 @@ laikas matuojamas milisekundemis (ms)
 | v0.5 3 strat l   | 11     | 9     | 93    | 802   | 9841  |
 | v0.5 3 strat ll  | 13     | 9     | 76    | 856   | 10645 |
 | v0.5 3 strat q   | 4      | 11    | 76    | 825   | 12592 |
+
 v1.0
 
 Patobulinau v0.5 versija, taip pat sukuriau meniu kurios pagalba iskvieciu norima strategija.
