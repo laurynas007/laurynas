@@ -23,15 +23,22 @@ V0.2&V0.3
 Pakeičiau mokinio klasę į mokinio struktūrą. sukūriau naują meniu funkciją, kuri leidžia vartotojui nuskaityti duomenis iš failo ir iš karto juos atspausdinti, rūšiavau pagal pavardes nes tai pirmasis spausdinamas stulpelis. Try catch metodą naudoju prieš meniu kuris paskelbia ar failas rastas ar ne, o pats txt failas randasi bin>Debug>netcoreapp2.1
 
 v0.4
-ciklu pagalba generuojami failai..
+sukurta failo generavimo funkcija, kuriai reikia ivesti failo pavadinima ir irasu skaiciu.
+funkcijoje yra laiko matuoklis.
+Kai irasai yra generuojami, tai jie tuo paciu metu yra irasomi i faila ir i lista.
+irasas yra surusiuojamas pagal didejimo tvarka, o tada spausdinama i 2 atskirus failus pagal vargsiuku ir galvociu kategorijas.
+
+4 menu funkcijoje yra 5 failo generavimo funkcijos iskvietimai pagal 
 tuo paciu metu kai pildomi failai, taip pat ir yra pildomas mokiniu listas
 sukuriamas naujas mokinys structuros atributas kategorija, kuri yra uzpildoma automatiskai pagal gaultini bala.
 2 failai pavadinti pagal tas kategorijas ir i jas yra spausdinami irasai.
 galutinai failai susikuria kai uzdarai programa.
 
+
 4 menu sakos greitis 50.23s
 
 v0.5
+
 sukuriau failo nuskaitymo funkcija, i kuria kreipiuosi failo pavadinimu, paciuss 5 failus as susigeneravau anksciau 4 uzd pagalba.
 Tuos failus reikia patalpinti i bin>Debug>netcoreapp2.1
 gaila, bet duomenu failu neiseis i githuba ikelti nes jie kartu virsija 25mb riba.
@@ -44,37 +51,68 @@ Linkedlist greitis 32188ms
 
 Queue greitis 34187 ms
 
+
 v1.0
 
 Patobulinau v0.5 versija, taip pat sukuriau meniu kurios pagalba iskvieciu norima strategija.
 Kiekviena strategija automatiskai atlieka apskaiciavimus su list, linkedlist ir queue.
 1.strategija tai rusiavimas i 2 konteinerius.
 
-list greitis: 19719ms
-
-linkedlist greitis:11630
-
-Queue greitis: 20754
 
 2 strategija tai perkeli vienos kategorijos duomenis (vargsiukai) i atskira konteineri, o is pirminio jie istrinami, kas lieka, tas perkeliama i galvociu konteineri.
 
-listo greitis: 10064
+3 strategija tai manoji. Mano student structura turi kategorijos atributa, kuris yra uzpildomas ivedant duomenis. To atributo pagalba as galiu nuspresti i kuri konteineri as noriu spausdinti duomenis, tokiu budu, man nereikia kurti papildomu konteineriu ir i juos dar ka nors rusiuoti. 
 
-linkedlist greitis: 19621
 
-Queue greitis: 11129
+
+2 strategija tai perkeli vienos kategorijos duomenis (vargsiukai) i atskira konteineri, o is pirminio jie istrinami, kas lieka, tas perkeliama i galvociu konteineri.
+
 
 3 strategija tai manoji. Mano student structura turi kategorijos atributa, kuris yra uzpildomas ivedant duomenis. To atributo pagalba as galiu nuspresti i kuri konteineri as noriu spausdinti duomenis, tokiu budu, man nereikia kurti papildomu konteineriu ir i juos dar ka nors rusiuoti. 
 
-listo greitis: 9047 ms
 
-linkedlist greitis: 8926 ms
-
-Queue greitis: 12507 ms
-
-Siulau atliekant v0.5 uzduoti paleisti programa isnaujo, nes kitaip pastebejau labai ilgai failus nuskaitoma.
 
 be to, pataisiau galimus bugus kitose versijose.
+
+v1.0.1
+
+Pataisiau klaidas.
+
+4 menu funkcijoje as 
+sukuriau failo generavimo funkcija, kuriai reikia ivesti failo pavadinima ir irasu skaiciu.
+
+funkcijoje yra laiko matuoklis.
+Kai irasai yra generuojami, tai jie tuo paciu metu yra irasomi i faila ir i lista.
+irasas yra surusiuojamas pagal didejimo tvarka, o tada spausdinama i 2 atskirus failus pagal vargsiuku ir galvociu kategorijas.
+
+4 menu funkcijoje yra 5 failo generavimo funkcijos iskvietimai pagal failo pavadinima ir irasu skaiciu. 1.txt 1000 2.txt 10000 3.txt 100000 4.txt 1000000 5.txt 10000000
+
+5 menu funkcija taip pat pakeista.
+Čia irgi yra sukurta nauja funkcija i kuria kreipiamasi su failo pavadinimu ir norimos strategijos numeriu.
+ Strategijos yra aprasytos v1.0 skiltyje.
+
+Pačioje menu funkcijoje yra 15 kreipiniu į šią funkciją, kad išmatuotų kiekvieno failo (1.txt;2.txt;3.txt;4.txt;5.txt) konteineriu apdorojimo greicius pagal 3 strategijas.
+
+Tyrimų rezultatai:
+l - list
+ll - linkedlist
+q - queue
+laikas matuojamas milisekundemis (ms)
+
+| Uzduotis\failas  | 1.txt  | 2.txt | 3.txt | 4.txt | 5.txt |
+| -------------    | ------ | ------| ------|-------|-------|
+| v0.4             | 17     | 35    | 324   | 3364  | 36275 |
+| v0.5 1 strat l   | 3      | 16    | 122   | 924   | 19949 | 
+| v0.5 1 strat ll  | 4      | 10    | 109   | 1041  | 11262 |
+| v0.5 1 strat q   | 3      | 14    | 92    | 827   | 21768 |
+| v0.5 2 strat l   | 137    | 11    | 116   | 885   | 9217  |
+| v0.5 2 strat ll  | 16     | 14    | 96    | 1153  | 10892 |
+| v0.5 2 strat q   | 148    | 11    | 97    | 903   | 22781 |
+| v0.5 3 strat l   | 11     | 9     | 93    | 802   | 9841  |
+| v0.5 3 strat ll  | 13     | 9     | 76    | 856   | 10645 |
+| v0.5 3 strat q   | 4      | 11    | 76    | 825   | 12592 |
+
+
 
 ----
 Naudojimosi instrukcija.
@@ -91,9 +129,9 @@ Jeigu buvo pasirinktas atsitiktiniu pažymiu rėžimas, tai pačius pažymius su
 
 3 meniu funkcija tiesiog leidžia atspausdinti i konsole studentu sarasa.
 
-4 meniu funkcija sugeneruoja 5 studentu failus su skirtingais irasu kiekiais: 1000,10000,100000,1000000,10000000 ir juos atspausdina i vargsiukai.txt ir galvociai.txt. Ši meniu funkcija turi kodo laiko matuokli.
+4 meniu funkcija sugeneruoja 5 studentu failus su skirtingais irasu kiekiais: 1000,10000,100000,1000000,10000000 ir juos atspausdina i vargsiukai.txt ir galvociai.txt. Ši meniu funkcija turi kodo laiko matuokli kuris rodys kiek laiko truko kurį failą apdoroti.
 
-5 meniu funkcija naudoja jau sugeneruotus 5 failus 4 meniu funkcijos pagalba, kurios dėka yra išbandomas 3 strategiju greitis.
-Norint atlikti 5 meniu funkciją yra siūloma paleisti programą iš naujo.
+5 meniu funkcija padaro 15 kreipinių į funkciją naudojant failo pavadinima ir strategijos numerį. Konsolės lange matome laikus.
+Šiom funkcijom atlikti turi būti jau sukurti failai, tai padaroma 4 menu funkcijos pagalba.
 
 Paleidžiant programą yra matoma failų direktorija.
